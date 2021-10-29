@@ -79,8 +79,6 @@ jobs:
         cd homelede
         chmod +x prepareCompile.sh
         ./prepareCompile.sh
-        ./scripts/feeds update -i
-        ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
