@@ -17,6 +17,7 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
+# 修改prepareCompile.sh
 sed -i '/disablePkgsList=/a.\/package\/lean\/luci-app-verysync ' ./prepareCompile.sh
 sed -i '/jd-dailybonus/d' ./prepareCompile.sh
 sed -i '/adguardhome/d' ./prepareCompile.sh
